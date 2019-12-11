@@ -10,10 +10,16 @@
     font-family: 'pingfang';
     height: calc(100% - 55px);
 }
+.commonPanel{
+    padding: 14px 11px;
+    overflow: auto;
+    border-radius: 5px;
+    border: 1px solid #c5d0e1;
+    box-shadow: 0 4px 2px rgba(103, 179, 60, 0.2);
+}
 .content-panel{
     text-align: center;
     width: 100%;
-    height: 100%;
 }
 /* 头部工具栏 --start*/
 .toolbar{
@@ -46,8 +52,17 @@ footer{
     padding: 20px;
     text-align: center;
 }
+/* 欢迎页btn */
 .welcomePage .normalBtn{
     width: 50%;
+}
+/* 公共页底部btn */
+.commonPage .normalBtn{
+    text-align: center;
+    width: 100%;
+}
+.commonPage footer{
+    margin-top: 55px;
 }
 .container .normalBtn{
     width: 100%;
@@ -136,4 +151,22 @@ footer{
 .tablePanel .normalBtn{
     padding: 3px 10px;
     border-radius: 30px;
+}
+.subPanel{
+    margin-bottom: 26px;
+}
+.subPanel p{
+    font-size: 18px;
+    margin-bottom: 7px;
+    padding-left: 9px;
+}
+.subPanel span{
+    padding-left: 9px;
+}
+.subPanel input{
+    border-radius: 3px;
+    padding: 6px 10px;
+    width: 100%;
+    border: 1px solid #c5d0e1;
+    margin-bottom: 12px;
 }

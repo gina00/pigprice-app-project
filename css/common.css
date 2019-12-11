@@ -67,6 +67,9 @@ a:hover {
     clear: both;
     height: 0;
 }
+input{
+    outline: none;
+}
 
 input::-webkit-input-placeholder {
     color: #dadada;
