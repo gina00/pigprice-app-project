@@ -1,0 +1,139 @@
+.container {
+    position: relative;
+    
+}
+.commonPage{
+    height: 100%;
+}
+.main-Panel{
+    padding: 20px;
+    font-family: 'pingfang';
+    height: calc(100% - 55px);
+}
+.content-panel{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+/* 头部工具栏 --start*/
+.toolbar{
+    padding: 0 10px;
+    height: 55px;
+    position: relative;
+    text-align: center;
+   
+}
+.toolbar i{
+    position: absolute;
+    left: 14px;
+    top: 1.4rem;
+}
+.normalToolBar{
+    background: transparent;
+}
+.greenToolBar{
+    color: #fff;
+    background-image: linear-gradient(to right,#73c500, #01a101);
+}
+.toolbar .title{
+    font-size: 20px;
+    text-align: center;
+    line-height: 55px;
+}
+/* 头部工具栏 --end*/
+footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.welcomePage .normalBtn{
+    width: 50%;
+}
+.container .normalBtn{
+    width: 100%;
+}
+/* 登录--start */
+.loginPanel{
+    margin: 15px 0;
+}
+.loginPanel header{
+    padding: 20px;
+    font-size: 24px;
+    color: #46b81b;
+    text-align: center;
+}
+.loginPanel input{
+    width: 80%;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+.loginPanel ul{
+    border: 1px solid #46b81b;
+}
+.loginPanel ul li{
+    padding: 10px 20px;
+    position: relative;
+}
+.loginPanel ul li i::after{
+    content: '';
+    border-left: 1px solid #46b81b;
+    margin-left: 10px;
+
+}
+.loginPanel ul li:first-child{
+    border-bottom: 1px solid #46b81b;
+}
+.loginPanel .isshow{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.loginPanel .prompt{
+    padding: 10px 0;
+    text-align: right;
+}
+.loginPanel .prompt a:hover{
+    color: #4acc1b;
+}
+/* 登录--end */
+.tipText{
+    margin-bottom: 10px;
+}
+.tablePanel{
+    height: 100%;
+    overflow: auto;
+    border-radius: 5px;
+    border: 1px solid #c5d0e1;
+    box-shadow: 0 6px 5px rgba(103, 179, 60, 0.2);
+}
+.tablePanel .layui-table[lay-skin=line]{
+    border-width: 0;
+    text-align: center;
+}
+.tablePanel .layui-table, .layui-table-view {
+    margin: 0;
+}
+.tablePanel .layui-table thead th{
+    height: 50px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    padding: 9px 5px;
+}
+.tablePanel .layui-table tbody td{
+    height: 50px;
+    text-align: center;
+    padding: 9px 5px;
+    border-bottom: 1px solid #c2d0e3;
+}
+.tablePanel .layui-table tbody tr:last-child td{
+    border: none;
+}
+.tablePanel .layui-table thead tr{
+    background: #e4e4e4;
+}
+.tablePanel .normalBtn{
+    padding: 3px 10px;
+    border-radius: 30px;
+}
