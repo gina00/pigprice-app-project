@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>3.1.0-日报管理（猪场、屠宰场）</title>
+    <link href="../node_modules/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/layui/css/layui.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="commonPage">
+        <header class="toolbar greenToolBar">
+            <i class="icon-back"></i>
+            <span class="title">11月7日详情</span>
+        </header>
+        <section class="main-Panel">
+            <p class="tipText red">退回：单行水平向左滑动，会显示查看异常原因和退回功能</p>
+            <div class="tablePanel autoHeight">
+                <table class="layui-table subTable" lay-filter="test">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" width="80px">地区</th>
+                            <th colspan="2">
+                                活猪
+                            </th>
+                            <th colspan="2">
+                                白条猪肉
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                价格
+                            </th>
+                            <th>
+                                环比增长(%)
+                            </th>
+                            <th>
+                                价格
+                            </th>
+                            <th>
+                                环比增长(%)
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>全省平均</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                        <tr>
+                            <td>A猪场</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                        <tr>
+                            <td>B猪场</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                        <tr>
+                            <td>C猪场</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                        <tr>
+                            <td>D猪场</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                        <tr>
+                            <td>E猪场</td>
+                            <td class="anomaly">42.3</td>
+                            <td class="anomaly">-0.3</td>
+                            <td class="viewDetails">异常详情</td>
+                            <td class="back">退回</td>
+                        </tr>
+                        <tr>
+                            <td>F猪场</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                        <tr>
+                            <td>G猪场</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                        <tr>
+                            <td>H猪场</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                        <tr>
+                            <td>I猪场</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                        <tr>
+                            <td>I猪场</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                        <tr>
+                            <td>I猪场</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <footer>
+                <a class="normalBtn nullBtn">查看被退回原因</a>
+                <a class="normalBtn fillBtn">审核上报</a>
+            </footer>
+        </section>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="../node_modules/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            var trArr = $(".subTable tbody tr");
+            var moreBtn = "";
+            moreBtn += "<tr>";
+            moreBtn += "<td>......</td>";
+            moreBtn += "<td></td>";
+            moreBtn += "<td></td>";
+            moreBtn += "<td></td>";
+            moreBtn += "<td></td>";
+            moreBtn += "</tr>";
+            for (var i = 0; i < trArr.length; i++) {
+                if (i > 9) {
+                    $(".subTable tbody").append(moreBtn);
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -22,13 +22,15 @@
                 <header>欢迎登录</header>
                 <ul>
                     <li>
-                        <i class="glyphicon glyphicon-user"></i>
+                        <i class="icon-user"></i>
                         <input type="text" placeholder="请输入账号">
+                        <a class="icon-showDetailNor"></a>
                     </li>
                     <li>
-                        <i class="glyphicon glyphicon-user"></i>
+                        <i class="icon-pw"></i>
                         <input type="password" placeholder="请输入密码">
                         <span class="isshow"></span>
+                        <a class="icon-showDetailNor"></a>
                     </li>
                 </ul>
                 <aside class="prompt">
@@ -46,6 +48,26 @@
     <script src="../js/common.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="../node_modules/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $(".loginPanel ul li").click(function () {
+                $(this).addClass("selected").siblings().removeClass("selected");
+            })
+            isShowDetail();
+        })
+
+        function isShowDetail() {
+            var userUlClickIndex = 0;
+            $(".icon-showDetailNor").click(function () {
+                userUlClickIndex++;
+                if (userUlClickIndex % 2 !== 0) {
+                    $(this).addClass("icon-showDetail");
+                } else {
+                    $(this).removeClass("icon-showDetail");
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>

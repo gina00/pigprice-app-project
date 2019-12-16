@@ -4,6 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 html {
     height: 100%;
     box-sizing: border-box;
@@ -17,7 +18,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-size: 12px;
-    font-family:pingfang, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    font-family: pingfang, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
 }
 
 ul,
@@ -27,12 +28,17 @@ p {
     margin: 0;
     padding: 0;
 }
+
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
-a{display: inline-block;}
+
+a {
+    display: inline-block;
+}
+
 a,
 a:focus,
 a:hover {
@@ -67,7 +73,8 @@ a:hover {
     clear: both;
     height: 0;
 }
-input{
+
+input {
     outline: none;
 }
 
@@ -97,36 +104,49 @@ img {
     max-height: 100%;
     -ms-interpolation-mode: bicubic;
 }
-i[class^="icon-"] {
-    width: 28px;
-    height: 28px;
+
+i[class^="icon-"],
+a[class^="icon-"] {
+    width: 24px;
+    height: 24px;
     display: inline-block;
     vertical-align: middle;
+    background-size: contain;
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
 }
 
 /* 按钮类 */
-.normalBtn{
+.normalBtn {
     padding: 10px 20px;
     color: #fff;
     border-radius: 50px;
     text-align: center;
     white-space: nowrap;
 }
-.normalBtn:hover{
+
+.normalBtn:hover {
     cursor: pointer;
 }
-.fillBtn{
+
+.fillBtn {
     background: #46b81b;
 }
-.fillBtn:hover{
+
+.fillBtn:hover {
     color: #fff;
     background: #4ccf1c;
 }
-.nullBtn{
+
+.nullBtn {
     color: #46b81b;
+    border: 1px solid #46b81b;
+}
+
+.nullBtn:hover {
+    color: #4ccf1c;
     border: 1px solid #46b81b;
 }
 
@@ -151,12 +171,25 @@ a:hover{
 .grey {
     color: #717171;
 }
-.green{
+
+.green {
     color: #46b81b;
 }
-.green-1{
+
+.green-1 {
     color: #67b33c;
 }
+
+.anomaly {
+    color: #fff;
+    background: red;
+}
+
+.viewDetails {
+    color: #fff;
+    background: blue;
+}
+
 /* 隐藏滚动条 */
 
 ::-webkit-scrollbar {
@@ -169,7 +202,36 @@ a:hover{
     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
     background: rgba(0, 0, 0, .2)
 }
-.icon-back{
+
+.icon-user {
+    background: url("../images/wo_normal.png") no-repeat center;
+
+}
+
+.icon-pw {
+    background: url("../images/pass_nor.png") no-repeat center;
+}
+
+.icon-back {
     background: url("../images/btn_Leftw.png") no-repeat center;
+    background-size: contain;
+}
+
+.icon-showDetailNor {
+    background: url("../images/eye_nor.png") no-repeat center;
+}
+
+.selected .icon-user {
+    background: url("../images/wo_click.png") no-repeat center;
+    background-size: contain;
+}
+
+.selected .icon-pw {
+    background: url("../images/pass_click.png") no-repeat center;
+    background-size: contain;
+}
+
+.icon-showDetail {
+    background: url("../images/eye_click.png") no-repeat center;
     background-size: contain;
 }

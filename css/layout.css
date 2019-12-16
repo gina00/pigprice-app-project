@@ -1,169 +1,332 @@
 .container {
     position: relative;
-    
+
 }
-.commonPage{
+
+.commonPage {
     height: 100%;
 }
-.main-Panel{
+
+/* 总内容区 */
+.main-Panel {
     padding: 20px;
     font-family: 'pingfang';
     height: calc(100% - 55px);
 }
-.commonPanel{
+
+/* 公共面板 */
+.commonPanel {
     padding: 14px 11px;
     overflow: auto;
     border-radius: 5px;
     border: 1px solid #c5d0e1;
     box-shadow: 0 4px 2px rgba(103, 179, 60, 0.2);
 }
-.content-panel{
+
+.content-panel {
     text-align: center;
     width: 100%;
 }
+
 /* 头部工具栏 --start*/
-.toolbar{
+.toolbar {
     padding: 0 10px;
     height: 55px;
     position: relative;
     text-align: center;
-   
+
 }
-.toolbar i{
+
+.toolbar i {
     position: absolute;
     left: 14px;
     top: 1.4rem;
 }
-.normalToolBar{
+
+/* 顶部透明工具栏区 */
+.normalToolBar {
     background: transparent;
 }
-.greenToolBar{
+
+/* 顶部填充色工具栏区 */
+.greenToolBar {
     color: #fff;
-    background-image: linear-gradient(to right,#73c500, #01a101);
+    background-image: linear-gradient(to right, #73c500, #01a101);
 }
-.toolbar .title{
+
+.toolbar .title {
     font-size: 20px;
     text-align: center;
     line-height: 55px;
 }
+
 /* 头部工具栏 --end*/
-footer{
+footer {
     width: 100%;
     padding: 20px;
     text-align: center;
 }
+
 /* 欢迎页btn */
-.welcomePage .normalBtn{
+
+.welcomePage footer .normalBtn {
     width: 50%;
+    font-size: 16px;
 }
+
 /* 公共页底部btn */
-.commonPage .normalBtn{
+.commonPage footer .normalBtn {
     text-align: center;
     width: 100%;
+    font-size: 16px;
+    margin-bottom: 16px;
 }
-.commonPage footer{
-    margin-top: 55px;
+
+.commonPage footer {
+    margin-top: 35px;
 }
-.container .normalBtn{
+
+.container .normalBtn {
     width: 100%;
 }
+
 /* 登录--start */
-.loginPanel{
+.loginPanel {
     margin: 15px 0;
 }
-.loginPanel header{
+
+.loginPanel header {
     padding: 20px;
     font-size: 24px;
     color: #46b81b;
     text-align: center;
+    font-weight: bold;
 }
-.loginPanel input{
+
+.loginPanel input {
     width: 80%;
-    padding: 5px;
+    padding: 5px 0 5px 18px;
     outline: none;
     border: none;
+    font-size: 16px;
 }
-.loginPanel ul{
+
+.loginPanel ul {
     border: 1px solid #46b81b;
 }
-.loginPanel ul li{
+
+.loginPanel ul li {
     padding: 10px 20px;
     position: relative;
 }
-.loginPanel ul li i::after{
+
+.loginPanel ul li i::after {
     content: '';
     border-left: 1px solid #46b81b;
-    margin-left: 10px;
-
+    margin-left: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    left: 32px;
 }
-.loginPanel ul li:first-child{
+
+.loginPanel ul li:first-child {
     border-bottom: 1px solid #46b81b;
 }
-.loginPanel .isshow{
+
+.loginPanel ul li a {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
+.loginPanel .isshow {
     position: absolute;
     top: 10px;
     right: 10px;
 }
-.loginPanel .prompt{
+
+.loginPanel .prompt {
     padding: 10px 0;
     text-align: right;
+    font-size: 16px;
 }
-.loginPanel .prompt a:hover{
+
+.loginPanel .prompt a:hover {
     color: #4acc1b;
 }
+
 /* 登录--end */
-.tipText{
+.tipText {
     margin-bottom: 10px;
 }
-.tablePanel{
+
+.tablePanel {
     height: 100%;
     overflow: auto;
     border-radius: 5px;
     border: 1px solid #c5d0e1;
     box-shadow: 0 6px 5px rgba(103, 179, 60, 0.2);
 }
-.tablePanel .layui-table[lay-skin=line]{
+
+.tablePanel .layui-table[lay-skin=line] {
     border-width: 0;
     text-align: center;
 }
-.tablePanel .layui-table, .layui-table-view {
+
+.tablePanel .layui-table,
+.layui-table-view {
     margin: 0;
 }
-.tablePanel .layui-table thead th{
+
+.tablePanel .layui-table thead th {
     height: 50px;
     text-align: center;
     color: #000;
     font-size: 16px;
     padding: 9px 5px;
 }
-.tablePanel .layui-table tbody td{
+
+.tablePanel .layui-table tbody td {
     height: 50px;
     text-align: center;
     padding: 9px 5px;
     border-bottom: 1px solid #c2d0e3;
 }
-.tablePanel .layui-table tbody tr:last-child td{
-    border: none;
+
+.tablePanel .layui-table tbody tr:last-child td {
+    border-bottom: none;
 }
-.tablePanel .layui-table thead tr{
+
+.tablePanel .layui-table thead tr {
     background: #e4e4e4;
 }
-.tablePanel .normalBtn{
+
+.tablePanel .normalBtn {
     padding: 3px 10px;
     border-radius: 30px;
 }
-.subPanel{
+
+/* 特殊表格 */
+.autoHeight.tablePanel {
+    height: 380px;
+}
+
+.subTable {
+    overflow: auto;
+    text-align: center;
+    margin: 0;
+}
+
+.subTable thead th {
+    text-align: center;
+    border-top: 0;
+    border-right: 0;
+}
+
+.subTable tr {
+    position: relative;
+}
+.subTable .view{
+    position: absolute;
+}
+
+.subTable thead th:first-child {
+    border-left: 0;
+}
+
+.subTable thead th {
+    color: #000;
+    border-color: #000;
+}
+
+.tablePanel .subTable.layui-table tbody td {
+    border-right: 0;
+    border-bottom: 1px solid #000;
+}
+
+.tablePanel .subTable.layui-table tbody td:first-child {
+    border-left: 0;
+}
+
+.tablePanel .subTable.layui-table tbody td.anomaly {
+    color: #fff;
+    background: #ff3500;
+}
+
+.tablePanel .subTable.layui-table tbody td.viewDetails {
+    color: #fff;
+    background: #4690fe;
+}
+
+.tablePanel .subTable.layui-table tbody td.back {
+    color: #fff;
+    background: #0762ea;
+}
+
+.subTable tbody td {
+    color: #000;
+    border-color: #000;
+}
+
+.subTable.layui-table td,
+.subTable.layui-table th {
+    padding: 7px 5px;
+    font-size: 18px;
+}
+
+.tablePanel .subTable.layui-table thead th {
+    font-size: 12px;
+    padding: 5px 10px;
+    height: auto;
+}
+
+.tablePanel .subTable.layui-table tbody td {
+    font-size: 12px;
+    height: auto;
+    padding: 4px 0;
+}
+
+.tablePanel .subTable.layui-table tbody tr:first-child td:first-child {
+    text-decoration: none;
+    color: #000;
+}
+
+.tablePanel .subTable.layui-table tbody tr td:first-child {
+    text-decoration: underline;
+    color: #0950fe;
+}
+
+/* 非表格类 */
+/*  */
+.fillResonPanel p {
+    font-size: 18px;
+}
+
+.fillResonPanel section {
+    margin-bottom: 10px;
+}
+
+.fillResonPanel .layui-textarea {
+    min-height: 200px;
+    font-size: 14px;
+}
+
+.subPanel {
     margin-bottom: 26px;
 }
-.subPanel p{
+
+.subPanel p {
     font-size: 18px;
     margin-bottom: 7px;
     padding-left: 9px;
 }
-.subPanel span{
+
+.subPanel span {
     padding-left: 9px;
 }
-.subPanel input{
+
+.subPanel input {
     border-radius: 3px;
     padding: 6px 10px;
     width: 100%;

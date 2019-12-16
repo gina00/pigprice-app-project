@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>3.1.0-日报管理（猪场、屠宰场）</title>
+    <link href="../node_modules/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/layui/css/layui.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="commonPage">
+        <header class="toolbar greenToolBar">
+            <i class="icon-back"></i>
+            <span class="title">日报管理</span>
+        </header>
+        <section class="main-Panel">
+            <div class="fillResonPanel">
+                <section>
+                    <p>某某县（区）活猪平均价格环比超5%</p>
+                    <p>某某县（区）白条猪平均价格环比超4%</p>
+                </section>
+                <div class="layui-form-item layui-form-text">
+                    <textarea name="desc" placeholder="请填写异常原因" class="layui-textarea"></textarea>
+                </div>
+            </div>
+            <footer>
+                <a class="normalBtn fillBtn">保存并审核上报</a>
+            </footer>
+        </section>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="../node_modules/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
