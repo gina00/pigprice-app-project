@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>登录页</title>
+    <title>3.1.0-日报管理（猪场、屠宰场）</title>
     <link href="../node_modules/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../node_modules/layui/css/layui.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
@@ -15,33 +15,29 @@
 
 <body>
     <div class="commonPage">
-        <header class="toolbar">
-            <i class="layui-icon layui-icon-left"></i>
+        <header class="toolbar greenToolBar">
+            <a class="icon-back" href="6.5.0.html"></a>
+            <span class="title">填写原因</span>
         </header>
         <section class="main-Panel">
-            <div class="content-panel">
-                <img src="../images/pic_1.png">
-            </div>
-            <div class="loginPanel">
-                <header>欢迎登录</header>
-                <ul>
-                    <li>
-                        <i class="glyphicon glyphicon-user"></i>
-                        <input type="text" placeholder="请输入账号">
-                    </li>
-                    <li>
-                        <i class="glyphicon glyphicon-user"></i>
-                        <input type="password" placeholder="请输入密码">
-                        <span class="isshow"></span>
-                    </li>
-                </ul>
-                <aside class="prompt">
-                    <a class="green">找回密码</a>
-                </aside>
-
+            <div class="commonPanel">
+                <div class="subPanel">
+                    <p class="green-1 bold font20">精瘦肉</p>
+                    <p>全省平均价格：67.24</p>
+                    <p>环比涨幅：0.30%</p>
+                </div>
+                <div class="subPanel specialSubPanel">
+                    <p class="green-1">全国市场平均价格</p>
+                    <input type="text" value="66.66">
+                </div>
+                <div class="subPanel specialSubPanel">
+                    <p class="green-1">环比涨幅</p>
+                    <input type="text" value="16.66%">
+                </div>
             </div>
             <footer>
-                <a class="normalBtn fillBtn">登录</a>
+                <a class="normalBtn fillBtn">保存</a>
+                <a class="normalBtn nullBtn">生成Excel文件保存至本地</a>
             </footer>
         </section>
     </div>

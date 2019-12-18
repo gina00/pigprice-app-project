@@ -79,22 +79,22 @@ input {
 }
 
 input::-webkit-input-placeholder {
-    color: #dadada;
+    color: #9faec5;
 }
 
 input::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    color: #dadada;
+    color: #9faec5;
 }
 
 input:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: #dadada;
+    color: #9faec5;
 }
 
 input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #dadada;
+    color: #9faec5;
 }
 
 img {
@@ -179,6 +179,9 @@ a:hover {
 .green-1 {
     color: #67b33c;
 }
+.black{
+    color: #000;
+}
 
 .anomaly {
     color: #fff;
@@ -190,11 +193,21 @@ a:hover {
     background: blue;
 }
 
+.pos-re {
+    position: relative;
+}
+
+.pos-ab {
+    position: absolute;
+}
+.font20{
+    font-size: 20px;
+}
 /* 隐藏滚动条 */
 
 ::-webkit-scrollbar {
     width: 0;
-    height: 1px
+    height: 0;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -213,6 +226,11 @@ a:hover {
 }
 
 .icon-back {
+    background: url("../images/btn_Leftg.png") no-repeat center;
+    background-size: contain;
+}
+
+.greenToolBar .icon-back {
     background: url("../images/btn_Leftw.png") no-repeat center;
     background-size: contain;
 }
@@ -234,4 +252,40 @@ a:hover {
 .icon-showDetail {
     background: url("../images/eye_click.png") no-repeat center;
     background-size: contain;
+}
+
+.icon-home {
+    background: url("../images/home_nor.png") no-repeat center;
+
+}
+
+.selected .icon-home {
+    background: url("../images/home_click.png") no-repeat center;
+    background-size: contain;
+}
+
+.icon-message {
+    background: url("../images/news_nor.png") no-repeat center;
+}
+
+.selected .icon-message {
+    background: url("../images/news_click.png") no-repeat center;
+    background-size: contain;
+}
+
+.icon-mine {
+    background: url("../images/wode_nor.png") no-repeat center;
+}
+
+.selected .icon-mine {
+    background: url("../images/wode_click.png") no-repeat center;
+    background-size: contain;
+}
+
+.icon-retrivePw {
+    background: url("../images/icon_pass.png") no-repeat center;
+}
+
+.icon-btnRight {
+    background: url("../images/btn_right.png") no-repeat center;
 }

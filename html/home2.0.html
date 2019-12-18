@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>3.1.0-日报管理（猪场、屠宰场）</title>
+    <link href="../node_modules/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/layui/css/layui.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="commonPage">
+        <header class="toolbar greenToolBar">
+            <span class="title">首页</span>
+        </header>
+        <section class="home-Panel">
+            <ul class="specail-listPanel">
+                <li>
+                    <a class="pig-manage" href="6.1.0.html">
+                        <span>猪价管理</span>
+                        <img src="../images/pic_zhujia.png">
+                    </a>
+                </li>
+                <li>
+                    <a class="pig-manage">
+                        <span>检疫APP</span>
+                        <img src="../images/pic_jianyi.png">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <nav class="nav">
+            <ul>
+                <li class="selected">
+                    <a href="home2.0.html">
+                        <i class="icon-home"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="2.1.0.html">
+                        <i class="icon-message"></i>
+                        <span>消息</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="2.2.0.html">
+                        <i class="icon-mine"></i>
+                        <span>我的</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="../node_modules/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $(".nav ul li").click(function () {
+                $(this).addClass("selected").siblings().removeClass("selected");
+            })
+            isShowDetail();
+        })
+
+        function isShowDetail() {
+            var userUlClickIndex = 0;
+            $(".icon-showDetailNor").click(function () {
+                userUlClickIndex++;
+                if (userUlClickIndex % 2 !== 0) {
+                    $(this).addClass("icon-showDetail");
+                } else {
+                    $(this).removeClass("icon-showDetail");
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
