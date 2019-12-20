@@ -14,6 +14,12 @@
     height: calc(100% - 110px);
 }
 
+.nodata.home-Panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* 总内容区 */
 .main-Panel {
     padding: 12px;
@@ -575,7 +581,10 @@ footer {
 }
 
 .none-panel {
-    margin-top: 40%;
+    /* margin-top: 40%; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .sub-message-text {
