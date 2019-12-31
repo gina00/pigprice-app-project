@@ -179,7 +179,8 @@ a:hover {
 .green-1 {
     color: #67b33c;
 }
-.black{
+
+.black {
     color: #000;
 }
 
@@ -200,9 +201,11 @@ a:hover {
 .pos-ab {
     position: absolute;
 }
-.font20{
+
+.font20 {
     font-size: 20px;
 }
+
 /* 隐藏滚动条 */
 
 ::-webkit-scrollbar {
@@ -288,4 +291,8 @@ a:hover {
 
 .icon-btnRight {
     background: url("../images/btn_right.png") no-repeat center;
+}
+
+.icon-close {
+    background: url("../images/close.png") no-repeat center;
 }

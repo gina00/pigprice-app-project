@@ -27,6 +27,7 @@
     width: 100%;
     height: calc(100% - 55px);
     overflow: auto;
+    position: relative;
 }
 
 /* 公共面板 */
@@ -863,4 +864,133 @@ footer {
 
 .imgPanel img {
     height: 80px;
+}
+
+/* 遮罩面板 */
+.maskPanel {
+    position: absolute;
+    height: calc(100% + 55px);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.back-listPanel {
+    border-radius: 10px 10px 0 0;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    margin-top: 15px;
+    max-height: calc(100% - 15px);
+    overflow: auto;
+    bottom: 0px;
+}
+
+.back-listPanel .cart {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.back-listPanel .cart::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #818fbb transparent transparent transparent;
+    position: relative;
+    left: 50%;
+    top: 20px;
+}
+
+.back-listPanel-ul {
+    max-height: calc(100% - 30px);
+    margin-top: 20px;
+    overflow: auto;
+    background: #fff;
+}
+
+.back-listPanel-ul li {
+    padding: 16px;
+    border-bottom: 3px solid #f2f2f2;
+
+}
+
+.listHead {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.listContent {
+    font-size: 14px;
+    color: #5c5c5c;
+    text-align: justify;
+    overflow: hidden;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.windowBg {
+    position: absolute;
+    height: calc(100% + 55px);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    display: table;
+}
+
+.windowPanel {
+    /* display: table-cell;
+    vertical-align: middle; */
+    margin-top: 160px;
+}
+.windowContentPanel{
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+.windowContentPanel .headTxt {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: bold;
+   
+}
+
+.windowContentPanel .subHeadTxt {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.windowContentPanel .content {
+    font-size: 14px;
+    color: #5c5c5c;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.windowContentPanel .fillBtn{
+    width: 100%;
+}
+.windowContentPanel .closeBtn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -50px;
+    left: calc((100% - 20px)/2);
 }
