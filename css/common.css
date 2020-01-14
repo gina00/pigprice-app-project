@@ -238,6 +238,11 @@ a:hover {
     background-size: contain;
 }
 
+.greenToolBar .icon-add {
+    background: url("../images/jia.png") no-repeat center;
+    background-size: contain;
+}
+
 .icon-showDetailNor {
     background: url("../images/eye_nor.png") no-repeat center;
 }
@@ -295,4 +300,12 @@ a:hover {
 
 .icon-close {
     background: url("../images/close.png") no-repeat center;
+}
+
+.icon-send {
+    background: url("../images/WeChat.png") no-repeat center;
+}
+
+.icon-pc {
+    background: url("../images/wenj.png") no-repeat center;
 }

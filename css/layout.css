@@ -7,11 +7,18 @@
     height: 100%;
 }
 
+/* 登录面板 */
+.login-panel {
+    padding: 12px;
+    height: 100%;
+}
+
 /* 首页内容区 */
 .home-Panel {
     padding: 12px;
     font-family: 'pingfang';
     height: calc(100% - 110px);
+    overflow: auto;
 }
 
 .nodata.home-Panel {
@@ -30,7 +37,7 @@
     position: relative;
 }
 
-/* 公共面板 */
+/* 子页公共面板 */
 .commonPanel {
     padding: 14px 11px;
     overflow: auto;
@@ -56,10 +63,67 @@
     text-align: center;
 }
 
-.toolbar a {
+.toolbar .icon-back {
     position: absolute;
     left: 14px;
     top: 1.4rem;
+}
+
+.toolbar .icon-add {
+    position: absolute;
+    right: 14px;
+    top: 1.4rem;
+    transform: rotate(0deg);
+    transition: all ease 0.2s;
+}
+
+.toolbar .icon-animate {
+    transform: rotate(45deg);
+    transition: all ease 0.2s;
+}
+
+.toolBar-downList-panel {
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 63px;
+    right: 10px;
+}
+
+.toolBar-downList-panel::before {
+    content: "";
+    width: 20px;
+    height: 0px;
+    font-size: 10px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -20px;
+    left: 79%;
+    z-index: -1;
+}
+
+.toolBar-downList-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.toolBar-downList-item:last-child {
+    border-bottom: none;
+}
+
+.toolBar-downList-item div {
+    padding: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+.toolBar-downList-item div:hover {
+    color: rgb(94, 94, 94);
+}
+
+.toolBar-downList-item a {
+    margin-left: 8px;
 }
 
 /* 顶部透明工具栏区 */
@@ -109,7 +173,7 @@ footer {
 }
 
 .commonPage footer {
-    margin-top: 55px;
+    margin-top: 15px;
 }
 
 .container .normalBtn {
@@ -296,6 +360,7 @@ footer {
 .tablePanel .subTable.layui-table tbody td.viewDetails {
     color: #fff;
     background: #4690fe;
+    padding: 0 10px;
 }
 
 .tablePanel .subTable.layui-table tbody td.back {
@@ -956,7 +1021,8 @@ footer {
     vertical-align: middle; */
     margin-top: 160px;
 }
-.windowContentPanel{
+
+.windowContentPanel {
     background: #fff;
     padding: 25px;
     border-radius: 20px;
@@ -969,7 +1035,7 @@ footer {
     color: #000;
     margin-bottom: 15px;
     font-weight: bold;
-   
+
 }
 
 .windowContentPanel .subHeadTxt {
@@ -984,13 +1050,19 @@ footer {
     margin-bottom: 20px;
     text-align: justify;
 }
-.windowContentPanel .fillBtn{
+
+.windowContentPanel .fillBtn {
     width: 100%;
 }
-.windowContentPanel .closeBtn{
+
+.windowContentPanel .closeBtn {
     width: 30px;
     height: 30px;
     position: absolute;
     bottom: -50px;
     left: calc((100% - 20px)/2);
+}
+
+.whiteSpace {
+    white-space: nowrap;
 }
